@@ -1,0 +1,115 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #d3d3d3;
+}
+
+.container {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    width: 50%;
+    min-width: 28rem;
+    padding: 3rem;
+    background-color: rgba(225, 225, 225, 0.9);
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+#taskHome {
+    position: relative;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 1rem 1.9rem rgba(0, 0, 0, 0.1);
+}
+
+#taskHome input {
+    width: 70%;
+    height: 50px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    padding: 1rem;
+    color: #555;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+#tasks {
+    width: 100%;
+    background-color: #fff;
+    color: #000000;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-radius: 0.6rem;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    height: 3rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: box-shadow 0.4s;
+
+}
+
+
+#taskHome button {
+    width: 20%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: #767676;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+#taskHome input:focus {
+    outline: none;
+    border-color: #8052ec;
+}
+
+
+#taskHome button:hover {
+    background-color: #6c5b7c;
+}
+
+
+.task:hover {
+    box-shadow: 1rem rgba(0, 0, 0, 0.2);
+}
+
+.task span {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.task button {
+    width: 50px;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #ff0000;
+}
